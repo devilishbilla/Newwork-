@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-color:#0A1446; */
+    color: #fff;
+    font-family: 'Baloo Tamma 2', cursive;
+    background-image: linear-gradient(to right,#0A1446,#0a1446e6, #212b8ff5);
+}
+
+
+.info{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form{
+    width: 50%;
+}
+
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    font-size: 25px;
+   /* width: 60%;
+   margin: 70px auto; */
+    
+}
+
+.form div{
+    width: 100%;
+}
+.form label{
+    /* padding-right: 685px; */
+}
+
+.form input{
+    width: 70%;
+    border-radius: 15px;
+    height: 2.5rem;
+    /* padding-left: .5rem; */
+    font-size:16px;
+}
+
+
+.gender-dropdown select{
+    width: 70%;
+    height: 2.5rem;
+    border-radius: 15px;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+#submit{
+    background-image: linear-gradient(to right,#2979e4, #ce0fdbf5);
+    margin-top: 5px;
+    /* text-align: left; */
+    text-align: center;
+    color: #ffff;
+}
+#submit:hover{
+    cursor: pointer;
+}
+
+.line {
+    border-left: 0px solid rgb(4, 17, 103);
+    height: 500px;
+    /* margin: 0px 125px; */
+  }
+
+@media only screen and (max-width: 1420px){
+
+    .form input{
+        width: 100%;
+    }
+    .info{
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    #gender{
+        width: 100%;
+    }
+    .form form{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 1170px){
+
+    .form input{
+        width: 100%;
+    }
+    .info{
+        text-align: center;
+        font-size: 25px;
+    }
+    /* .line{
+        margin: 0px 90px;
+    } */
+    .container{
+        margin: unset!important;
+        width: 75%;
+    }
+
+    #gender{
+        width: 100%;
+    }
+    .form form{
+        width: 70%;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+
+    section{
+        
+align-items: center;
+        flex-direction: column;
+    }
+
+    .line{
+        display: none;
+    }
+    .form input{
+        width: 100%;
+    }
+    .info{
+        text-align: center;
+        font-size: 21px;
+        width: 100%;
+    }
+    .container{
+        margin: unset!important;
+        width: 75%;
+    }
+    
+    .form {
+        width: 90%;
+    }
+    #gender{
+        width: 100%;
+    }
+    .form form{
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 540px){
+.info{
+
+    font-size: 21px;
+    width: 100%;
+}
+.form {
+    width: 100%;
+}
+.container{
+    margin: unset;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+   width: 100%;
+   margin: 70px auto;
+    
+}
+#gender{
+    width: 100%;
+}
+}
+
+@media only screen and (max-width: 376px){
+
+    .form form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+       width: 100%;
+       margin: 70px auto;
+        
+    }
+    .container{
+        margin: unset!important;
+    }
+    .form {
+        width: 100%;
+    }
+    .info {
+        font-size: 16px;
+        width: 100%;
+    }
+    }
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: unset;
+    padding: 20px;
+    margin-right: 111px;
+  }
